@@ -1,0 +1,49 @@
+body {
+
+  background-color: #243c3d;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  color: #e5ae39;
+}
+
+h2 {
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  color: #e5ae39
+}
+
+
+.card-body {
+  padding: 20px;
+  background-color: #b6d463
+}
+
+#comments {
+  padding: 50px;
+}
+
+#main-content{
+  text-align: center;
+  margin-top: 25px;
+}
+
+#name {
+
+  margin: 0 auto;
+}
+
+.btn {
+  color: white;
+  background-color: #e5ae39;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #bc8f2f
+}

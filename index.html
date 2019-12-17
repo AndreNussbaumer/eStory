@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Eternal Story</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/customStyles.css">
+  <script src="functions.js"></script>
+</head>
+<body onload="loadComments()">
+<div class="container">
+    <h1>The Eternal Story</h1>
+    <h2>The Eternal Story is written by <b>YOU</b>.
+ You’re that voice, the readers imagine, that dictate the tone in which the story of our universe is told. We’re not only every action ever taken,  but every action to come.</h2>
+    <div id="comments" class="card mb-2">
+    </div>
+    <div id="main-content">
+        <div id="make-comment">
+            <div class="form-group">
+                <textarea class="form-control" id="message" Required placeholder="Continue the story..."></textarea>
+            </div>
+            <button type="button" class="btn" onclick="insertComment()">Post!</button>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+  <h2>Developed by André Nussbaumer</h2>
+</html>
