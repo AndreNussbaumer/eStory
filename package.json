@@ -4,8 +4,9 @@
   "description": "",
   "main": "DBConnection.js",
   "dependencies": {
+    "mysql": "^2.15.0",
     "node": "^10.5.0",
-    "mysql": "^2.15.0"
+    "pg": "^7.15.0"
   },
   "devDependencies": {},
   "scripts": {
