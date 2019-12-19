@@ -5,6 +5,7 @@ const con = require("./DBConnection");
 const hostname = '127.0.0.1'
 const port = '3000'
 
+
 const server = http.createServer((req, res) => {
     if(req.method == 'GET' && req.url == '/')
     {
@@ -25,7 +26,7 @@ const server = http.createServer((req, res) => {
 
         var conn = con.getConnection();
 
-        conn.query('SELECT * FROM id11974252_comments.comments', function(error, results, fields){
+        conn.query('SELECT * FROM heroku_4eaa0c8a97dd685.comments', function(error, results, fields){
             if(error) throw error;
 
             var comments = JSON.stringify(results);
@@ -49,7 +50,7 @@ const server = http.createServer((req, res) => {
             console.log("The comment is: "+ obj.message);
             var conn = con.getConnection();
 
-            conn.query('INSERT INTO id11974252_comments.comments (comments.userName, comments.comment) VALUES (?,?)',[obj.name,obj.message + ' '], function(error, results, fields){
+            conn.query('INSERT INTO heroku_4eaa0c8a97dd685.comments (comments.userName, comments.comment) VALUES (?,?)',[obj.name,obj.message + ' '], function(error, results, fields){
             if(error) throw error;
             console.log("Success!");
         });
