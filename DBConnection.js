@@ -6,7 +6,7 @@ function getConnection(){
         host:"eu-cdbr-west-02.cleardb.net",
         user:"bc70d0f8152b8f",
         password:"551789e3",
-        database:"heroku_4eaa0c"
+        database:"heroku_4eaa0c8a97dd685"
     });
     return con;
 }
